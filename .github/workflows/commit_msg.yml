@@ -6,7 +6,11 @@
 
 name: 'Commit Message Check'
 on: pull_request
-
+permissions:
+  contents: write
+  pull-requests: write
+  repository-projects: write
+  
 jobs:
   check-commit-message:
     name: Check Commit Message
